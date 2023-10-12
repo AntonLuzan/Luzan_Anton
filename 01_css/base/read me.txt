@@ -1,0 +1,28 @@
+
+1. Luzan_Anton\01_css\base\01_ HTML_часть1.html
+
+Импортируйте из файла с использованием тега <link>
+<link rel="stylesheet" href="mystyle_for_screen" media="screen"/>
+<link rel="stylesheet" href="mystyle_for_print" media="screen"/>
+
+2. Luzan_Anton\01_css\base\01_HTML_часть2.html
+
+Используя таблицу стилей в файле html
+<style media="screen"> стили </style>
+<style media="print"> стили </style>
+
+3. Luzan_Anton\01_css\base\01_HTML_часть3.html
+
+импортируйте, используя директиву @import в таблице стилей файла html (внутри тега <style>)
+<style> @import "link_to_style_print.css" print </style>
+<style> @import "link_to_style_screen.css" screen </style>
+
+4. Luzan_Anton\01_css\base\01_HTML_доп.html
+
+Пример: <body style="стили">
+
+5. Luzan_Anton\01_css\base\5.html
+
+Импортируйте оба стиля из выше созданных файлов, используя директиву @import во внешнем файле стилей (style.css)
+Все варианты должны работать независимо друг от друга.
+Постарайтесь каждый вариант выполнить в новом файле.

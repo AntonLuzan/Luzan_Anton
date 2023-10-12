@@ -1,0 +1,20 @@
+
+BODY { 
+background-color: #7c5b5b; 
+font-family: sans-serif;
+font-size: 14px;
+
+}
+
+   .leftimg {
+float:left; /* Выравнивание по левому краю */
+margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+.centerimg {
+float:center;
+margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+.rightimg  {
+float: right; /* Выравнивание по правому краю  */ 
+margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
