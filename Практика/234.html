@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Форма заявки на работу в зоопарке</h1>
+    <p><em>Пожалуйста, заполните форму. Обязательные поля помечены*</em></p>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <FIELDSET>
+            <LEGEND>Контактная информация</LEGEND>
+            <label for="name"> Имя &#42; </label>
+            <INPUT type="text" id="name" autofocus>
+            <label for=“number”>Телефон </label>
+            <INPUT type="number" ID="number" NAME="number">
+            <label for=“email”>&#42; Email </label>
+        </FIELDSET>
+
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <FIELDSET>
+                <LEGEND>Персональная информация</LEGEND>
+                <label for="age"> Возраст &#42; </label>
+                <INPUT type="number" id="age" autofocus>
+                <label>Пол</label>
+                <select name="list" id="list">>
+                    <option value="1">Женщина</option>
+                    <option value="2">Мужчина</option>
+                </select>
+<label>
+    Перечислите 
+    личные 
+    качества
+</label>
+                <textarea name="text_area1">Форма отправки</textarea>
+            </FIELDSET>
+
+</body>
+
+</html>
