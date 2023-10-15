@@ -1,11 +1,14 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-
- <g>
+<svg width="80" height="60" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
   <title>Layer 1</title>
-  <line id="svg_2" y2="356.14491" x2="238" y1="187" x1="238" stroke="#000" fill="none"/>
-  <line stroke="#000" id="svg_3" y2="354" x2="238" y1="259" x1="131.00001" fill="none"/>
-  <line stroke="#000" id="svg_4" y2="259" x2="132" y1="184.75" x1="239.37501" fill="none"/>
-  <rect id="svg_5" height="65.625" width="69.375" y="234.375" x="238.125" stroke="#000" fill="none"/>
-  <rect id="svg_6" height="0" width="1.25" y="365" x="386.875" stroke="#000" fill="none"/>
+  <rect id="svg_1" height="94" width="113" y="238" x="240" stroke="#000" fill="none"/>
+  <line id="svg_2" y2="400.02113" x2="353" y1="187" x1="353" stroke="#000" fill="none"/>
+  <line id="svg_3" y2="187" x2="353" y1="293" x1="468" stroke="#000" fill="none"/>
+  <line stroke="#000" id="svg_4" y2="293.99999" x2="465" y1="402" x1="349" fill="none"/>
+  <line id="svg_12" y2="18.35294" x2="22.58824" y1="27.52941" x1="14.35294" stroke="#000" fill="none"/>
+  <line id="svg_13" y2="18.35294" x2="22.58824" y1="27.52941" x1="14.35294" stroke="#000" fill="none"/>
+  <line id="svg_16" y2="33.64706" x2="22.11765" y1="18.58824" x1="22.35294" stroke="#000" fill="none"/>
+  <line id="svg_17" y2="34.11765" x2="22.11765" y1="26.82353" x1="14.35294" stroke="#000" fill="none"/>
+  <rect id="svg_18" height="5.17647" width="8.47059" y="24" x="21.88235" stroke="#000" fill="none"/>
  </g>
 </svg>
