@@ -5,39 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
     <title>Document</title>
-</head>
 
+<style>
+ span { 
+color:  #db1b1b; 
+}
+</style>
+</head>
 <body>
     <h1>Форма заявки на работу в зоопарке</h1>
-    <p><em>Пожалуйста, заполните форму. Обязательные поля помечены*</em></p>
+    <p><em>Пожалуйста, заполните форму. Обязательные поля помечены<span>&#42;</span></em></p>
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
+
         <FIELDSET>
             <LEGEND>Контактная информация</LEGEND>
-            <label for="name"> Имя &#42; </label>
-            <INPUT type="text" id="name" autofocus>
-            <label for=“number”>Телефон </label>
-            <INPUT type="number" ID="number" NAME="number">
-            <label for=“email”>&#42; Email </label>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name"> Имя<span>&#42;</span></label>
+                    </td>
+                    <td>
+                        <INPUT type="text" id="name" autofocus>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=“number”>Телефон </label>
+                    </td>
+                    <td>
+                        <INPUT type="number" ID="number" NAME="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=“email”> Email<span>&#42;</span> </label>
+                    </td>
+                    <td>
+                        <input type="email" ID="email" NAME="email">
+                    </td>
+                </tr>
+            </table>
         </FIELDSET>
-
-        <form action="http://fe.it-academy.by/TestForm.php" method="post">
             <FIELDSET>
                 <LEGEND>Персональная информация</LEGEND>
-                <label for="age"> Возраст &#42; </label>
-                <INPUT type="number" id="age" autofocus>
-                <label>Пол</label>
-                <select name="list" id="list">>
-                    <option value="1">Женщина</option>
-                    <option value="2">Мужчина</option>
-                </select>
-<label>
-    Перечислите 
-    личные 
-    качества
-</label>
-                <textarea name="text_area1">Форма отправки</textarea>
-            </FIELDSET>
-
+                <table>
+                    <tr>
+                        <td>
+                            <label for="age"> Возраст<span>&#42;</span></label>
+                        </td>
+                        <td>
+                            <INPUT type="number" id="age" autofocus>
+                        </td>
+                    </tr>
+            <tr>
+                <td>
+                    <label>Пол</label>
+                </td>
+                <td>
+                    <select name="list" id="list">
+                        <option value="1">Женщина</option>
+                        <option value="2">Мужчина</option>
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Перечислите<br>
+                            личные<br>
+                            качества
+                        </label>
+                    </td>
+                    <td>
+                        <textarea name="text_area1"></textarea>
+                    </td>
+                </tr>
+        </table>
+        </FIELDSET>
+        <fieldset>
+            <legend>Выбирите ваших любимых животных</legend>
+            <label>
+                <input type="checkbox" name="hobby[1]"> Зебра
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[2]"> Кошак
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[3]"> Анаконда
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[4]"> Человек
+            </label><br>
+            <label>
+                <input type="checkbox" name="hobby[5]"> Слон
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[6]"> Антилопа
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[7]"> Голубь
+            </label>
+            <label>
+                <input type="checkbox" name="hobby[8]"> Краб
+            </label>
+        </fieldset>
+    </form>
 </body>
 
 </html>
