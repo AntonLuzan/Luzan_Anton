@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base2</title>
+    <style>
+        ul {
+            list-style-type: upper-roman;
+            width: 350px;
+        }
+
+        .cs {
+            margin: 0;
+            padding: 0;
+            color: lawngreen;
+
+        }
+
+        .bo {
+            overflow: auto;
+            background-color: black;
+            width: 400px;
+            height: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><b>Контейнер с кодом</b></li>
+            <ul>
+                <li type="i">Цвет фона:чёрный</li>
+                <li type="i">Цвет текста: зелёный</li>
+                <li type="i">Ширина:400рх</li>
+                <li type="i">Максимальная высота контейнера:4-е строки</li>
+                <li type="i">Переполнение:автоматическое</li>
+            </ul>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><b>Список</b></li>
+            <ul>
+                <li type="i">Ширина:350рх</li>
+                <li type="i">Тип списка:римские цифры</li>
+                <li type="i">Тип вложенного списка: римские нижний регистр цифры</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="bo">
+        <pre class="cs">
+<code >#1/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name&")
+print "Hello there, " + name + "!"
+def long_function_name(
+var_one, var_two, var_three,
+var_four):
+print(var_one)
+y_list = [
+1, 2, 3,
+4, 5, 6]
+result = some_function_
+that_takes_arguments(
+'a', 'b', 'c',
+'d', 'e', 'f')
+</code>
+        </pre>
+    </div>
+</body>
+
+</html>

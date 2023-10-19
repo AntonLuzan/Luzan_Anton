@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        .bo {
+            background-color: rgb(197, 194, 194);
+        }
+
+        .fb {
+            float: left;
+            width: 15em;
+            background-color: rgb(121, 119, 119);
+        }
+
+        .st {
+            background-color: rgb(181, 184, 177);
+            margin-left: 15em;
+            margin-bottom: .2em;
+
+        }
+
+        .d {
+            background-color: rgb(121, 119, 119);
+            clear: both;
+        }
+
+        .rightimg {
+            float: right;
+            margin: 7px;
+        }
+
+        .clear {
+            background-color: rgb(181, 184, 177);
+            min-height: 137px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bo">
+        <div class="fb">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15 em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагаться слева</li>
+                <li>Блок навигации наполните контекстом достаточным, чтобы по высоте он начинал захватывать вторую
+                    статью, как показано в данном примере</li>
+            </ul>
+        </div>
+
+        <div class="st">
+            <h3>Статья 1</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin- bottom
+            </p>
+        </div>
+        <div class="st">
+            <h3>Статья 2</h3>
+            <p>Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-<br>
+                bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                данной статьи для этой картинки.
+            </p>
+            <img src="../../../Pictures/mail.png" alt="mail" title="mail" class="rightimg">
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+    <div class="d">
+        <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
+    </div>
+</body>
+
+</html>
