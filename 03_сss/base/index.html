@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .menu {
+         list-style-type: none;
+         padding-left: 0;
+         margin-left: 0;
+      }
+
+      .menu a {
+         text-decoration: none;
+         font-family: sans-serif;
+         color: gray;
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: aqua;
+         border-bottom: 5px salmon;
+         margin: 1px;
+         position: relative;
+      }
+
+      .menu li {
+         float: left;
+      }
+
+      .d {
+         display: none;
+         position: relative;top: auto;
+      }
+   </style>
+</head>
+
+<body>
+   <ul class="menu">
+      <li><a href="#">Понедельник</a>
+         <ul class="ms">
+            <li class="d"><a href="#">Завтрак</a></li>
+            <li class="d"><a href="#">Обед</a></li>
+            <li class="d"><a href="#">Завтрак</a></li>
+         </ul>
+      </li>
+      <li><a>Вторник</a>
+      <ul class="ms">
+         <li class="d"><a href="">Завтрак</a></li>
+         <li class="d"><a href="">Обед</a></li>
+         <li class="d"><a href="">Завтрак</a></li>
+      </ul>
+      </li>
+      <li><a>Среда</a>
+      <ul class="ms">
+         <li class="d"><a href="">Завтрак</a></li>
+         <li class="d"><a href="">Обед</a></li>
+         <li class="d"><a href="">Завтрак</a></li>
+      </ul>
+   </li>
+      <li><a>Четверг</a></li>
+      <li><a>Пятница</a></li>
+      <li><a>Суббота</a></li>
+   </ul>
+</body>
+
+</html>
