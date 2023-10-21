@@ -1,0 +1,52 @@
+@media screen {
+    /* div.one {
+        width: 100px;
+      }
+      div.one>div {
+        background-color: burlywood;
+        position: relative;
+        cursor: pointer;
+      }
+    
+      div.submenu {
+        width: 150px;
+        display: none;
+      }
+      div.one>div:hover div.submenu {
+        background-color: aqua;
+        display: flex;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        z-index: 1;
+      }
+        div{
+        border: solid rgb(7, 4, 4) 1px
+      } */
+}
+@media all and ( max-width: 1187px){
+    div.one {
+    width: 100px;
+  }
+  div.one>div {
+    background-color: burlywood;
+    position: relative;
+    cursor: pointer;
+  }
+
+  div.submenu {
+    width: 150px;
+    display: none;
+  }
+  div.one>div:hover div.submenu {
+    background-color: aqua;
+    display: block;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    z-index: 1;
+  }
+    div{
+    border: solid rgb(175, 37, 37) 1px
+  }
+   }

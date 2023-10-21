@@ -6,62 +6,117 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      .menu {
-         list-style-type: none;
-         padding-left: 0;
-         margin-left: 0;
+      @media all {
+         .menu {
+            width: 100%;
+            display: table;
+         }
+
+         .menu ul {
+            display: table-row;
+         }
+
+         .menu li {
+            display: table-cell;
+            position: relative;
+            background: #2767A0;
+         }
+
+         .menu li a {
+            display: block;
+            padding: 15px 15px;
+            color: #fff;
+            text-align: center;
+         }
+
+         .menu-caret:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: 3px solid;
+            border-right: 3px solid transparent;
+            border-bottom: 0;
+            border-left: 3px solid transparent;
+         }
+
+         .menu ul li:hover,
+         .menu a:hover {
+            background: #666;
+         }
+
+         .menu li:hover ul {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            background: #666;
+            margin: 0;
+            padding: 10px 20px;
+            width: 150px;
+            z-index: 9999;
+         }
+
+         .menu ul ul {
+            display: none;
+         }
+
+         .menu ul ul li {
+            display: grid;
+            background: #666;
+            padding: 5px 0;
+         }
+
+         .menu ul ul li a {
+            display: grid;
+            padding: 0;
+            background: #241010;
+            text-align: left;
+         }
+
+         a {
+            border: solid black 1px;
+         }
       }
 
-      .menu a {
-         text-decoration: none;
-         font-family: sans-serif;
-         color: gray;
-         display: inline-block;
-         padding: 10px 20px;
-         background-color: aqua;
-         border-bottom: 5px salmon;
-         margin: 1px;
-         position: relative;
-      }
+      @media screen and (max-width: 1187px) {
+         .menu {
+            display: block;
+            position: relative top;
+         }
+         li{
+            display: block;
+            padding: 15px;
+            position: absolute;top: 100%;z-index: 1;
 
-      .menu li {
-         float: left;
-      }
-
-      .d {
-         display: none;
-         position: relative;top: auto;
+          
+         }
+         a {
+            border: solid rgb(160, 17, 17) 1px;
+         }
       }
    </style>
 </head>
 
 <body>
-   <ul class="menu">
-      <li><a href="#">Понедельник</a>
-         <ul class="ms">
-            <li class="d"><a href="#">Завтрак</a></li>
-            <li class="d"><a href="#">Обед</a></li>
-            <li class="d"><a href="#">Завтрак</a></li>
-         </ul>
-      </li>
-      <li><a>Вторник</a>
-      <ul class="ms">
-         <li class="d"><a href="">Завтрак</a></li>
-         <li class="d"><a href="">Обед</a></li>
-         <li class="d"><a href="">Завтрак</a></li>
+   <div class="menu">
+      <ul>
+         <li><a href="#">Понедельник</a></li>
+         <li><a href="#">Вторник</a></li>
+         <li><a class="menu-caret" href="#">Среда</a>
+            <ul>
+               <li><a href="#">Завтрак</a></li>
+               <li><a href="#">Обед</a></li>
+               <li><a href="#">Ужин</a></li>
+            </ul>
+         </li>
+         <li><a href="#">Четверг</a></li>
+         <li><a href="#">Пятница</a></li>
+         <li><a href="#">Суббота</a></li>
       </ul>
-      </li>
-      <li><a>Среда</a>
-      <ul class="ms">
-         <li class="d"><a href="">Завтрак</a></li>
-         <li class="d"><a href="">Обед</a></li>
-         <li class="d"><a href="">Завтрак</a></li>
-      </ul>
-   </li>
-      <li><a>Четверг</a></li>
-      <li><a>Пятница</a></li>
-      <li><a>Суббота</a></li>
-   </ul>
+   </div>
 </body>
 
 </html>
