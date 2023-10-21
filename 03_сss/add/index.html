@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="addddddd.css" media="screen">
+   <style>
+        #bar {
+    top:-5em; right:5em; /* Положение */
+     margin: 0; /* Отступы */
+     position: absolute; /* Абсолютное позиционирование */
+     width: 10em; /* Ширина */
+     /* Переход */
+     -webkit-transition: top 1s ease-out 0.5s;
+     -moz-transition: top 1s ease-out 0.5s;
+     -o-transition: top 1s ease-out 0.5s;
+     transition: top 1s ease-out 0.5s;
+    }
+   #bar:hover { top: 0; }
+      @media all {
+         .menu {
+            width: 100%;
+            display: table;
+         }
+
+         .menu ul {
+            display: table-row;
+         }
+
+         .menu li {
+            display: table-cell;
+            position: relative;
+            background: #2767A0;
+         }
+
+         .menu li a {
+            display: block;
+            padding: 15px 15px;
+            color: #fff;
+            text-align: center;
+         }
+
+         .menu-caret:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: 3px solid;
+            border-right: 3px solid transparent;
+            border-bottom: 0;
+            border-left: 3px solid transparent;
+         }
+
+         .menu ul li:hover,
+         .menu a:hover {
+            background: #666;
+         }
+
+         .menu li:hover ul {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            background: #666;
+            margin: 0;
+            padding: 10px 20px;
+            width: 150px;
+            z-index: 9999;
+         }
+
+         .menu ul ul {
+            display: none;
+         }
+
+         .menu ul ul li {
+            display: grid;
+            background: #666;
+            padding: 5px 0;
+         }
+
+         .menu ul ul li a {
+            display: grid;
+            padding: 0;
+            background: #241010;
+            text-align: left;
+         }
+
+         a {
+            border: solid black 1px;
+         }
+      }
+
+      @media screen and (max-width: 1187px) {
+         @media all {
+         .menu {
+            width: 100%;
+            display: block;
+         }
+
+         .menu ul {
+            display: table-cell;
+         }
+
+         .menu li {
+            display: table-row;
+            position: relative;
+            background: #b1d824;
+         }
+
+         .menu li a {
+            display: block;
+            padding: 15px 15px;
+            color: #140606;
+            text-align: center;
+         }
+
+         .menu-caret:after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-left: .255em;
+            vertical-align: .255em;
+            content: "";
+            border-top: 3px solid;
+            border-right: 3px solid transparent;
+            border-bottom: 0;
+            border-left: 3px solid transparent;
+         }
+
+         .menu ul li:hover,
+         .menu a:hover {
+            background: #1477b1;
+         }
+
+         .menu li:hover ul {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            background: #b1d824;
+            margin: 0;
+            padding: 10px 20px;
+            width: 150px;
+            z-index: 1;
+         }
+
+         .menu ul ul {
+            display: none;
+         }
+
+         .menu ul ul li {
+            display: grid;
+            background: #b1d824;
+            padding: 1px 0;
+         }
+
+         .menu ul ul li a {
+            display: grid;
+            padding: 0;
+            background: #3bb6b6;
+            text-align: left;
+         }
+
+         a {
+            border: solid black 1px;
+         }
+      }
+      #bar {
+     -webkit-transition: ease-out 0.5;
+     -moz-transition: ease-out 0.5s;
+     -o-transition: ease-out 0.5s;
+     transition: ease-out 0.5s;
+    }
+      }
+   </style>
+</head>
+
+<body>
+   <div class="menu">
+      <ul>
+         <li><a href="#">Понедельник</a></li>
+         <li><a href="#">Вторник</a></li>
+         <li><a class="menu-caret" href="#">Среда</a>
+            <ul id="bar">
+               <li><a href="#">Завтрак</a></li>
+               <li><a href="#">Обед</a></li>
+               <li><a href="#">Ужин</a></li>
+            </ul>
+         </li>
+         <li><a href="#">Четверг</a></li>
+         <li><a href="#">Пятница</a></li>
+         <li><a href="#">Суббота</a></li>
+      </ul>
+   </div>
+</body>
+
+</html>
