@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css4_1</title>
+    <style>
+        * {
+            margin: 2px;
+            padding: 0;
+        }
+        h1,h2 {
+            padding: 0 50px;
+        }
+        p {
+            text-indent: 2em;
+            padding:5px;
+            border: 1px outset #000000;
+            border-radius: 0 1em/2em
+        }
+           .docc:hover::after{content: url(img/Doc.jpg);}
+           .pdff:hover:after{content: url(img/pdf.png);}
+           .zipp:hover::after{content: url(img/ZIP.png);}
+    </style>
+</head>
+<body>
+    <h1> Форматы файлов.</h1>
+    <p>.DOC или .doc (от англ.<img src="img/1.png"><a href="https://ru.wikipedia.org/wiki/Document">document</a>)-расширение имени файла, используемое для файлов, представляющих текст, с разметкой или
+        без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако
+        позже стало использоваться для двоичных форматов с разметкой.<br><a href="doc/1.docx">Документ MS Word</a><img src="img/Doc.jpg"></p>
+    <p>Portable Document Format (<img src="img/1.png"><a href="https://ru.wikipedia.org/wiki/pdf">PDF</a>)- межплатформенный формат электронных документов, разработанных фирмой Adobe Systems с
+        использованием ряда возможностей языка Postscript.<br><a href="doc/1.docx.pdf">Документ PDF</a><img src="img/p.png"></p>
+    <p>ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img src="img/1.png"><a href="https://ru.wikipedia.org/wiki/zip">.zip</a> и хранит в
+        сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путем распоковки с помощью
+        специальной программы.<br><a href="doc/1.zip">Архив</a><img src="img/z.gif"></p>
+    <h2>Это список файлов</h2>
+    <img src="img/2.jpg"><a class="docc" href="doc/1.docx">Документ MS Word</a><br>
+    <img src="img/2.jpg"><a class="pdff" href="doc/1.docx.pdf">Документ PDF</a><br>
+    <img src="img/2.jpg"><a class="zipp" href="doc/1.zip">Архив</a>
+</body>
+</html>
