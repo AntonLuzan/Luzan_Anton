@@ -12,22 +12,17 @@
 
         .bo {
             background-color: rgb(197, 194, 194);
-            flex-wrap: nowrap;
+            display: flex;
         }
 
         .fb {
-            
             width: 15em;
             background-color: rgb(121, 119, 119);
         }
 
         .st {
-            display: flex;
-            flex-direction: column-reverse;
             background-color: rgb(181, 184, 177);
-            margin-left: 15em;
             margin-bottom: .2em;
-
         }
 
         .d {
@@ -36,15 +31,11 @@
         }
 
         .rightimg {
-            float: right;
             width: 100px;
             height: 100px;
             margin: 7px;
         }
-        .clear {
-            background-color: rgb(181, 184, 177);
-            min-height: 137px;
-        }
+
     </style>
 </head>
 <body>
@@ -59,6 +50,7 @@
                     статью, как показано в данном примере</li>
             </ul>
         </div>
+       <div style="flex-grow: 1;">
         <div class="st">
             <h3>Статья 1</h3>
             <p>
@@ -77,9 +69,9 @@
                 bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
                 данной статьи для этой картинки.
             </p>
-            <img src="../../../Pictures/mail.png" alt="mail" title="mail" class="rightimg">
-            <div class="clear"></div>
+            <div style="display: flex; justify-content: flex-end;"><img src="../../../Pictures/mail.png" alt="mail" title="mail" class="rightimg"></div>
         </div>
+       </div>
     </div>
     <div class="d">
         <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
