@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>ul>li>a {
+            color: red;
+        }
+
+        div>ul>li>span>a {
+            color: green;
+        }
+
+        div>ul>li>em>a {
+            color: blue;
+        }
+    
+        div>p>em>a {
+            color: yellow;
+        }
+       
+        div>span>em>a {
+            color: black;
+        }
+
+        ul>li>a {
+            color: orange;
+        }
+
+        ul>li>span>a {
+            color: pink;
+        }
+
+        ul>li>em>a {
+            color: violet;
+        }
+
+        ul>li>p>em>a {
+            color: aqua;
+        }
+
+        ul>li>div>p>a {
+            color: indigo;
+        }
+
+        ul>li>div>ul>li>a {
+            color: chocolate;
+        }
+
+        ul>li>div>ul>li>em>a {
+            color: brown;
+        }
+
+        ul>li>div>ul>li>span>a {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        p>em>a {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><a href="#">н</a></li>
+            <li><span><a href="#">н</a></span></li>
+            <li><em><a href="#">н</a></em></li>
+        </ul>
+        <p><em><a href="#">к</a></em></p>
+        <span><em><a href="#">к</a></em></span>
+    </div>
+    <ul>
+        <li>
+            <a href="#">к</a>
+            <span><a href="#">к</a></span>
+            <em><a href="#">к</a></em>
+        </li>
+        <li>
+            <p><em><a href="#">к</a></em></p>
+        </li>
+        <li>
+            <div>
+                <p><a href="#">к</a></p>
+                <ul>
+                    <li><a href="#">к</a></li>
+                    <li><em><a href="#">к</a></em></li>
+                    <li><span><a href="#">к</a></span></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <p>
+        <em>
+            <a>к</a>
+        </em>
+    </p>
+
+</body>
+
+</html>
