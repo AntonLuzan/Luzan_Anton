@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.7.1.min.js">
+    <style>
+        * {
+            padding: 10;
+        }
+
+        FIELDSET {
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Проверка пароля</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <FIELDSET>
+            <INPUT TYPE="text" class="password">
+            <label for=“password”>&#42; Пароль </label><br>
+            <INPUT TYPE="text" class="col_password">
+            <label for=“col_password”>&#42; Повторите пароль </label><br>
+            <div class="error"></div>
+            <input type="submit" value="Отправить" class="button"><br>
+        </FIELDSET>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </script>
+    <script>
+
+        $(".password").on(function () {
+            var text = $(this).text();
+            $("input").val(text);
+
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.7.1.min.js">
+    <style>
+        * {
+            padding: 10;
+        }
+
+        FIELDSET {
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Проверка пароля</h1>
+    <form method="post" name="form" action="">
+        <FIELDSET>
+        <input type="text" class="password">
+        <label for=“password”>&#42; Пароль </label><br>
+       
+        <input type="text" class="cor_password">
+        <label for=“col_password”>&#42; Повторите пароль </label><br><br>
+        <input type="submit" value="Отправить" id="submit">
+    </FIELDSET>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </script>
+    <script>
+
+        $(".cor_password").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
+        
+            var value_input1 = $(".password").val(); // Получаем содержимое 1-го поля
+            var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
+            
+            if(value_input1 != value_input2) { // Условие, если поля не совпадают
+            
+                $(".password").css('background-color', 'red'); // Выводим сообщение
+                $(".cor_password").css('background-color', 'red'); // Выводим сообщение
+                $("#submit").attr("disabled", "disabled"); // Запрещаем отправку формы
+                
+            } else { // Условие, если поля совпадают
+            
+                $("#submit").removeAttr("disabled");  // Разрешаем отправку формы
+                $(".password").css('background-color', 'green'); // Выводим сообщение
+                $(".cor_password").css('background-color', 'green'); // Выводим сообщение
+                
+            }
+            
+        });
+    
+    </script>
+
+</body>
+
+</html>
