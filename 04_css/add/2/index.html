@@ -7,27 +7,29 @@
     <title>Document</title>
     <style>
         body {
-            counter-reset: heading;
-            /* Инициируем счетчик */
+            counter-increment: heading 65;
+           text-align: center;
+           font-size: 50pt;
+
         }
 
         td:before {
-            counter-increment: heading;
-            /* Указываем идентификатор счетчика */
-            content: '' counter(heading);
-            /* Выводим текст перед содержимым тега <h2> */
+            counter-increment: heading -1;
+            content: "" counter(heading) " ";
         }
 
         table {
             border: solid 20px black;
         }
+
         td {
             width: 200px;
             height: 200px;
         }
 
         tr:nth-child(odd) {
-            background-color: black;
+            background-color:black;
+            color: white;
         }
 
         tr:nth-child(odd)>td:nth-child(even) {
@@ -36,9 +38,11 @@
 
         tr:nth-child(even)>td:nth-child(even) {
             background-color: black;
+            color: white;
         }
     </style>
-</head> 
+</head>
+
 <body>
     <table>
         <tr>
@@ -123,4 +127,5 @@
         </tr>
     </table>
 </body>
+
 </html>
