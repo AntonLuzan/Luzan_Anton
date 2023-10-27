@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>counter-increment</title>
+  <style>
+   body {
+    counter-increment: heading 64; /* Инициируем счетчик */
+   }
+   h2:before {
+    counter-increment: heading -1; /* Указываем идентификатор счетчика */
+    content: "Глава " counter(heading) ". "; /* Выводим текст перед содержимым тега <h2> */
+   }
+  </style>
+ </head>
+ <body>
+  <h2>Теория ловли льва в пустыне</h2>
+  <h2>Методы инверсной кинематики</h2>
+  <h2>Ловля льва численными методами</h2>
+ </body>
+</html>
